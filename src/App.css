@@ -1,0 +1,81 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: var(--bg-secondary);
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.app-header h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr 320px;
+  gap: 1rem;
+  padding: 1rem;
+  flex: 1;
+  min-height: 0;
+}
+
+.panel-left, .panel-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+}
+
+.panel-centre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.panel-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 0 1rem 1rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.card h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.app-footer {
+  background: var(--bg-secondary);
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.app-footer a { color: var(--accent-light); }
+
+@media (max-width: 900px) {
+  .main-layout { grid-template-columns: 1fr; }
+  .panel-bottom { grid-template-columns: 1fr; }
+}

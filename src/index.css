@@ -1,0 +1,19 @@
+:root {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --bg-card: #1e293b;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --accent: #0ea5e9;
+  --accent-light: #38bdf8;
+  --danger: #ef4444;
+  --warning: #eab308;
+  --success: #22c55e;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { min-height: 100vh; }
